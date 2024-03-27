@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pack.prnaboo.MainController">
+   <children>
+      <HBox prefHeight="851.0" prefWidth="1440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="850.0" prefWidth="150.0">
+               <children>
+                  <VBox layoutY="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <Button fx:id="databaseNewsButton" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#useDatabaseNewsButton" text="Database News">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fx:id="notify" fitHeight="15.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@active-notification-3151234-2623667%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="databaseUsersButton" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#useDatabaseUsersButton" text="Database Utenti" />
+                        <Button fx:id="newsCollectorButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#useNewsCollectorButton" prefHeight="26.0" prefWidth="105.0" text="NewsCollector" />
+                        <Button fx:id="manageFeedButton" layoutX="10.0" layoutY="61.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#useManageFeedController" prefHeight="26.0" prefWidth="105.0" text="Manage Feed RSS" />
+                        <Button fx:id="helpButton" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#useHelpButton" text="Help" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneDisplayTableview" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="825.0" prefWidth="1150.0">
+               <HBox.margin>
+                  <Insets top="25.0" />
+               </HBox.margin>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <MenuBar fx:id="menuBar" maxWidth="1.7976931348623157E308" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu fx:id="menuButton" mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
